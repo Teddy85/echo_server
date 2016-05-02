@@ -7,7 +7,7 @@ s.listen(10)
 for i in range(10) :                                                             
    pid=os.fork()                                                                
                                                        
-   try                                                                        
+   try:                                                                         
         while True:                                                             
               conn, addr = s.accept()                                           
                                                                      
